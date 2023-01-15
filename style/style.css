@@ -62,6 +62,11 @@ header{
     background: #FF900E;
     border-radius: 8px;
     border: 0;
+    transition: .4s;
+}
+.btn:hover{
+    color:white;
+    background: #241606;
 }
 
 
@@ -214,15 +219,68 @@ header{
     text-align: center;
     border: 1px solid #FF900E;
     border-radius: 8px;
+    transition: 0.3s;
 }
 
+.highlight-list:hover{
+    background-color: #FF900E;
+    color: white;
+}
 
+/* ===============================
+            get Started
+====================================== */
+.join-team{
+    padding: 130px 240px;
+    margin: auto;
+    width: 1440px;
+    align-items: center;
+
+}
+.join-us{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,191,0,0.989233193277311) 0%, rgba(55,183,35,1) 100%, rgba(0,255,132,0.958420868347339) 100%);
+    text-align: center;
+    padding: 40px;
+}
+.join-us h1{
+    font-size: 38px;
+    color: #ffffff;
+}
+.join-us h3{
+    font-size: 30px;
+    margin: 10px 0;
+    color: white;
+}
+.join-us h4{
+    margin: 10px 0;
+    color: white;
+}
+.join-us p{
+    font-size: 18px;
+    color: #727272;
+    margin: 24px 0;
+}
+.btnN{
+    font-size: 20px;
+    color:white;
+    padding: 12px 45px;
+    border-radius: 30px;
+    background-color: #FF900E;
+    transition: .4s;
+    border: 0;
+}
+.btnN:hover{
+    color:white;
+    background: #000000;
+}
 /* ==========================
         Sponsor section
 ================================== */
 .sponsor{
-    padding: 150px 240px;
+    padding: 10px 240px;
     text-align: center;
+    margin-bottom: 130px;
 }
 .sponsor h1{
     font-weight: 700;
@@ -249,7 +307,6 @@ header{
 }
 
 
-
 /* ==========================
             Footer
 ================================== */
@@ -263,4 +320,301 @@ footer{
     text-align: center;
     background: #FFF4E7;
     border-radius: 8px;
+}
+
+
+.robi6{
+    display: none;
+}
+
+
+/* ==============================================================================
+                                    Media Queries
+=================================================================================== */
+@media only screen and (max-width: 576px) {
+    
+    /* ============================
+        Header Start
+================================ */
+    header{
+        background-color: #FFF4E7;
+    }
+    .container{
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        font-size: 18px;
+        color: #424242;
+        gap: 10px;
+        text-align: center;
+    }
+    .nav-logo{
+        font-size: 35px;
+        color: #131313;
+    }
+    .nav-content{
+        margin: auto;
+        width: 100%;
+        padding:0 5px;
+    }
+    .nav-contents{
+        text-align: center;
+    }
+    .nav-contents >h1{
+        font-size: 24px;
+        color: #131313;
+        margin-top: 36px;
+        margin-bottom: 13px;
+    }
+    .nav-contents >p{
+        font-size: 14px;
+        color: #727272;
+        margin-bottom: 16px;
+    }
+    .nav-contents >img{
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    .btn{
+        font-weight: 400;
+        font-size: 16px;
+        color:white;
+        padding: 10px 25px;
+        background: #FF900E;
+        border-radius: 30px;
+        border: 0;
+        transition: .4s;
+    }
+    .btn:hover{
+        color:white;
+        background: #241606;
+    }
+    
+/* ===========================
+        Quick Features
+================================ */
+    .quick-features{
+        padding: 30px 30px;
+        display: grid;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 35px;
+    }
+    .feature-img{
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-img img{
+        width: 100%;
+    }
+    .feature-content{
+        margin: auto;
+        width: 100%;
+    }
+    .feature-content >h2{
+        font-size: 25px;
+        color: #131313;
+        margin-bottom: 20px;
+    }
+    #Q-color{
+        color: #727272;
+    }
+    #F-color{
+        color: #FF900E;
+        font-weight: bold;
+    }
+    .feature-content >p{
+        color: #727272;
+        line-height: 16px;
+        margin-bottom: 22px;
+    }
+    /* ==========================
+        Feature Section
+================================ */
+    .feature-list{
+        display:grid;
+        flex-direction:column;
+        padding: 5px 5px;
+    }
+    .list-item{
+        padding-top: 30px;
+        margin: auto;
+        width: 100%;
+    }
+    .list-item >h1{
+        font-size: 24px;
+        line-height: 33px;
+        color: #131313;
+        margin-bottom: 14px;
+        border-left:3px solid #FF900E;
+        padding-left: 20px;
+    }
+    .list-item >p{
+        font-size: 16px;
+        line-height: 20px;
+        color: #727272;
+        margin-bottom: 10px;
+    }
+    .main-item{
+        display: grid;
+        gap: 10px;
+
+    }
+    .item-details{
+        height: 100px;
+        padding: 10px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+    }
+    .feature-list-img{
+        margin: auto;
+        width: 100%;
+    }
+    .item-details >h3{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .item-details >p{
+        font-size: 14px;
+        line-height: 20px;
+        color: #727272;
+    }    
+    .feature-list-img img{
+        padding: 0;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        }
+
+    .experience{
+        padding: 0;
+        width: 150px;
+        height: 100px;
+        background: #FF900E;
+        border-radius: 8px;
+        z-index: 3;
+        margin-top: -50px;
+    }
+    .experience h1{
+        padding: 0;
+        font-size: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .experience p{
+        padding-bottom: 25px;
+        font-size: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    /* =================================
+        company highlight
+    ===================================== */
+    .company-highlight{
+        padding: 10px 30px;
+        margin-top: 150px;
+    }
+    .highlight-title >h1{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 53px;
+        color: #131313;
+        margin-bottom: 24px;
+    }
+    .highlight-title >p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #727272;
+        margin-bottom: 100px;
+    }
+    .highlight-item{
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-around;
+    }
+    .highlight-list{
+        padding: 50px;
+        text-align: center;
+        border: 1px solid #FF900E;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .highlight-list:hover{
+        background-color: #FF900E;
+        color: white;
+    }
+        /* ===============================
+            get Started
+====================================== */
+    .join-team{
+        padding: 30px 30px;
+        margin: auto;
+        width: 100%;
+        align-items: center;
+
+    }
+    .join-us{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,191,0,0.989233193277311) 0%, rgba(55,183,35,1) 100%, rgba(0,255,132,0.958420868347339) 100%);
+        text-align: center;
+        padding: 10px;
+    }
+    .join-us h1{
+        font-size: 28px;
+        color: #ffffff;
+    }
+    .join-us h3{
+        font-size: 18px;
+        margin: 10px 0;
+        color: rgb(249, 249, 249);
+    }
+    .join-us h4{
+        margin: 10px 0;
+        color: white;
+    }
+    .join-us p{
+        font-size: 14px;
+        color: #727272;
+        margin: 24px 0;
+    }
+    .btnN{
+        padding: 10px 35px;
+    }
+    /* ==========================
+        Sponsor section
+================================== */
+    .sponsor{
+        padding: 10px 30px;
+        text-align: center;
+    }
+    .sponsor h1{
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+    .sponsor p{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .sponsor-company{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+
 }
