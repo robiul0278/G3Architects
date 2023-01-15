@@ -217,7 +217,7 @@ header{
 .highlight-list{
     padding: 50px;
     text-align: center;
-    border: 1px solid #FF900E;
+    background:  #ffedd8;
     border-radius: 8px;
     transition: 0.3s;
 }
